@@ -12,7 +12,10 @@ public class GetUserInput {
         do {
             userInput = input.acceptStringInput(message);
             if (valid.isBlank(userInput)) {
-                System.out.println("Code Word cannot be blank. ");
+                System.out.println("Input cannot be blank.");
+            }
+            else if (!valid.onlyAlpha(userInput)) {
+                System.out.println("You must only use letters of the alphabet.");
             }
             else {
                 proceed = true;
@@ -47,6 +50,10 @@ public class GetUserInput {
         } while (!proceed);
         return userInput;
     }
+
+    /*public String userInputPadded(String userInput) {
+        while (userInput.length() %)
+    }*/
 
 
 }

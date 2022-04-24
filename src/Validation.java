@@ -7,6 +7,11 @@ public class Validation {
         return input.trim().length() == 0;
     }
 
+    public boolean onlyAlpha(String input) {
+        input = input.replaceAll("\\s+","");
+        return input.matches("[a-zA-Z]+");
+    }
+
     public boolean isNotInt(String input) {
         try{
             int inputInt = Integer.parseInt(input);

@@ -1,14 +1,13 @@
 import java.math.BigInteger;
 import java.util.Hashtable;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class EnumerateCodeWord {
     public EnumerateCodeWord() {
 
     }
 
-    public BigInteger enumerateCodeWord(String codeWord, int date, String sortedCodeWord) {
+    public String enumerateCodeWord(String codeWord, int date, String sortedCodeWord) {
         int index = 0;
         ArrayList<Character> seenList = new ArrayList<>();
         ArrayList<Integer> finalList = new ArrayList<>();
@@ -33,14 +32,12 @@ public class EnumerateCodeWord {
             }
             seenList.add(c);
         }
-        System.out.println(seenList);
-        System.out.println(finalList);
 
         String finalString = (finalList.toString().replaceAll("\\[|\\]", "").replaceAll(", ","\t"));
         finalString = finalString.replaceAll("\\s+","");
         BigInteger finalBigInteger = new BigInteger(finalString);
         BigInteger day = new BigInteger(String.valueOf(date));
         finalBigInteger = (finalBigInteger.multiply(day));
-        return finalBigInteger;
+        return finalBigInteger.toString();
     }
 }
