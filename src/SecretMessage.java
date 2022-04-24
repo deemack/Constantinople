@@ -98,7 +98,7 @@ public class SecretMessage {
         EnumerateCodeWord enumerCode = new EnumerateCodeWord();
         codeWordAsNumber = (enumerCode.enumerateCodeWord(codeWord, dayOfMonth, sortedCodeWord));
         DecodedMessage(messageToEncodeAsCharArray);
-        System.out.println("Your decoded message is:\n" + messageEncoded.toString().replace(",", "").replace("[", "").replace("]", "").trim());
+        System.out.println("Your decoded message is:\n" + messageEncoded.toString().replace(",", "").replace("[", "").replace("]", "").trim().replace(" ", ""));
     }
     //converts a string to a char array without any spaces
     public ArrayList<Character> wordCharArray(String word) {
