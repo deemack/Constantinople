@@ -1,5 +1,5 @@
 
-package org.dave.jartoexe;
+package org.dave.constantinople;
 
 public class Constantinople {
 

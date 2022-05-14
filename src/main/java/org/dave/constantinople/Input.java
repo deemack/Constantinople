@@ -1,4 +1,4 @@
-package org.dave.jartoexe;
+package org.dave.constantinople;
 
 import java.util.Scanner;
 
