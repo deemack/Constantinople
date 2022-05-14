@@ -7,3 +7,7 @@ An explanation of the code system is detailed [here](https://books.google.com.au
 ## What it does
 A command line application that asks the user for a codeword, the day of the month, and a message to encode or decode.
 The program then outputs the message in its decoded or encoded form. The message is encoded and decoded using the same technique employedd in Chapman's code.
+
+## IntelliJ
+If you clone repo this to IntelliJ you can use the Maven builder on the right-hand side to navigate to **Lifecycle** and double click **install**
+This will create an executable file of this program in the **target** folder
