@@ -1,3 +1,5 @@
+package org.dave.constantinople;
+
 public class GetUserInput {
     public GetUserInput() {
 
