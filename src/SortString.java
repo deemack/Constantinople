@@ -1,3 +1,5 @@
+package org.dave.jartoexe;
+
 import java.util.Arrays;
 
 public class SortString {
