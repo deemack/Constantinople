@@ -8,7 +8,7 @@ public class EnumerateCodeWord {
     public EnumerateCodeWord() {
 
     }
-
+// This Array sorting logic was done by Jess. Thanks Jess you Rock.
     public String enumerateCodeWord(String codeWord, int date, String sortedCodeWord) {
         int index = 0;
         ArrayList<Character> seenList = new ArrayList<>();
